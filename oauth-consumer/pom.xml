@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>net.oauth.core</groupId>
 		<artifactId>oauth-core-parent</artifactId>
@@ -8,30 +9,12 @@
 	</parent>
 	<artifactId>oauth-consumer</artifactId>
 	<version>20100601</version>
-	<packaging>jar</packaging>
 	<name>OAuth Core: Consumer</name>
-	<repositories>
-		<repository>
-			<id>Vaadin-Tunis-Meetup-Group-releases</id>
-			<url>https://raw.githubusercontent.com/Vaadin-Tunis-Meetup-Group/mvn-repo/master/releases</url>
-		</repository>
-	</repositories>
 	<dependencies>
-		<dependency>
-			<groupId>net.oauth.core</groupId>
-			<artifactId>oauth</artifactId>
-			<version>20100527</version>
-		</dependency>
+	<dependency>
+		<groupId>net.oauth.core</groupId>
+		<artifactId>oauth</artifactId>
+		<version>20100527</version>
+	</dependency>
 	</dependencies>
-
-	<distributionManagement>
-		<repository>
-			<id>repo</id>
-			<url>https://github.com/Vaadin-Tunis-Meetup-Group/mvn-repo.git/raw/master/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot-repo</id>
-			<url>https://github.com/Vaadin-Tunis-Meetup-Group/mvn-repo.git/raw/master/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
